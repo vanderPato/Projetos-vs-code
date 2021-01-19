@@ -12,7 +12,7 @@ body{
 
 @font-face{
     font-family: Quantum;
-    src: url('/assets/font/Quantum.otf');
+    src: url('font/Quantum.otf');
 }
 
 .container{
@@ -27,7 +27,7 @@ h1{
 h2{
     text-transform: uppercase;
     text-align: center;
-    color: #FFF;
+    color: rgb(0, 57, 245);
     margin-bottom: 50px;
     letter-spacing: 4px;
     font-size: 33px;
@@ -57,10 +57,10 @@ footer{
 /*header*/
 
 header{
-    background-color: #D43F52;
+    background-color: #fbff00;
     text-transform: uppercase;
     font-weight: bold;
-    color: #FFF;
+    color: rgb(21, 17, 232);
     padding: 30px 20px;
 }
 
@@ -71,7 +71,7 @@ header .container{
 
 .logo{
     font-size: 32px;
-    color: #000;
+    color: rgb(0, 0, 0);
     font-weight: normal;
     margin-top: -8px;
     font-family: 'Quantum', 'Raleway', sans-serif;
@@ -95,7 +95,7 @@ header .container{
 }
 
 .menuMobile div{
-    background-color: #FFF;
+    background-color: rgb(4, 0, 255);
     height: 2px;
     width: 35px;
     margin: 5px 0;
@@ -128,7 +128,7 @@ header .container{
 
 .menu ul a{
     text-decoration: none;
-    color: #FFF;
+    color: rgb(0, 0, 0);
     padding: 10px 5px;
 }
 
@@ -159,7 +159,7 @@ header .container{
 }
 
 #banner h1{
-    color: #D43F52;
+    color: #000000;
     font-size: 60px;
     animation-delay: 0.4s;
     line-height: 55px;
@@ -182,11 +182,11 @@ header .container{
 }
 
 #banner img{
-    height: 30px;
+    height: 50px;
 }
 
 #banner .github{
-    filter: invert(97%) sepia(97%) saturate(0%) hue-rotate(4deg) brightness(103%) contrast(103%);
+    filter: invert(95%) sepia(97%) saturate(0%) hue-rotate(4deg) brightness(103%) contrast(103%);
 }
 
 /*about*/
@@ -203,7 +203,7 @@ header .container{
 
 #about h3,
 #about strong{
-    color: #D43F52;
+    color: #413fd4;
 }
 
 #about p{
@@ -223,19 +223,19 @@ header .container{
     margin-top: 30px;
     text-decoration: none;
     font-weight: bold;
-    color: #D43F52;
+    color: #065b83;
     text-transform: uppercase;
     letter-spacing: 2.5px;
     font-size: 19px;
     padding: 15px 30px;
-    border: 2px solid #D43F52;
+    border: 2px solid #3fcfd4;
     transition: 0.2s;
     max-height: 100vh;
     text-align: center;
 }
 
 #about a:hover{
-    background-color: #D43F52;
+    background-color: #0fbdba;
     color: #FFF;
 }
 
@@ -289,7 +289,7 @@ header .container{
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: #D43F52;
+    background-color: #00d3f8;
 }
 
 .iconHolder img{
@@ -362,7 +362,7 @@ header .container{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #000;
+    background-color: rgb(17, 162, 214);
 }
 
 #projects .container{
@@ -380,7 +380,7 @@ header .container{
 .project{
     color: #FFF;
     height: 280px;
-    background-image: url(../images/projects/awax.png);
+    background-image: url(image/icone_drinks.png);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -419,7 +419,7 @@ header .container{
     align-items: center;
     margin-right: 10px;
     text-decoration: none;
-    color: #FFF;
+    color: rgb(0, 0, 0);
     letter-spacing: 2px;
     position: relative;
     padding: 5px;
@@ -445,7 +445,8 @@ header .container{
 }
 
 .starbucks{
-    background-image: url(../images/projects/starbucks.png);
+    opacity: 1;
+    background-image: url(image/icone_drinks.png);
 }
 
 .starbucks div{
@@ -453,7 +454,7 @@ header .container{
 }
 
 .fylo{
-    background-image: url(../images/projects/fylo.png);
+    background-image: url(image/icone_drinks.png);
 }
 
 .fylo div{
@@ -461,7 +462,7 @@ header .container{
 }
 
 .medicenter{
-    background-image: url(../images/projects/medicenter.png);
+    background-image: url(image/icone_drinks.png);
 }
 
 .medicenter div{
