@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-bt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Document</title>
     <style>
         body{
@@ -12,10 +12,20 @@
 </head>
 <body>
     <script>
-    var salario = 145.5;
+    var salario = 49;
+    window.alert(`valor atual ${salario}`)
     salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
-    salario.toFixed(3)
-    document.write(`Seu ${salario}`).replace(".",",")
+    salario.toFixed(1).replace(".",",")    
+    var pag_sa = parseFloat(window.prompt('façao pagamento'))
+    salario =salario + pag_sa
+    window.alert(`pagamento adicionado ${pag_sa}, valor atual ${salario}`)
+    document.write(`Seu saldo em banco é ${salario}`)
+
+    if(salario>100){
+        window.alert('ta ficando rico ')
+    }else{
+        
+    }
     </script>
 
 </body>
