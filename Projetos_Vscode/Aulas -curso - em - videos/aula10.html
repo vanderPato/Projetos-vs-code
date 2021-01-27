@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset "UTF-8">
+  <meta http-equiv ="X-UA-Compatible" content "IE=edge">
+  <title >Eventos DOM</title>
+  <style>
+      div#aperte{
+          background: rgb(193, 235, 4);
+          font: normal 20pt Arial;
+          color: black;
+          width: 200px;
+          height: 200px;
+          text-align:center;
+          line-height: 200px;
+      }
+
+  </style>
+</head>
+<body>
+
+    <h1>Começando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aqui estou desenvolvendo em <strong>DOM</strong> </p>
+    <p>Aqui tudo se torma mas simples</p>
+
+    <div  id ="aperte" >Aperte em mim</div>
+    <script>
+        var interacao1 = window.document.getElementById('aperte');
+        interacao1.addEventListener('click', acao)
+        interacao1.addEventListener('mouseenter', entando)
+        interacao1.addEventListener('mouseout', sair)
+        function entando(){
+            interacao1.innerText = 'dentro'
+            interacao1.style.background = 'BLUE'
+
+        }
+
+
+        function acao() {
+            window.document.write('digite seu nome')
+            interacao1.style.background = 'GREEN'
+
+            interacao1.innerHTML = '<strong>aperte em mim </strong>'
+        }
+
+
+        function sair(){
+            interacao1.innerText ='saindo'
+            interacao1.style.background = 'RED'
+        }
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando valores</title>
+
+    <style>
+        body{
+            background:rgb(0, 16, 16);
+            text-align: center;
+            font: normal 15pt Arial;
+            
+        }
+        div#most{
+            background:rgb(9, 29, 29);
+            margin-top:  20px;
+            width: 300px;
+            height: 50px;
+            line-height: center;
+            text-align: center;            
+        }
+
+        input#tex1{
+            color: blue;
+            background:chartreuse;
+            line-height: center;
+            text-align: center;
+            width: 120;
+            height:120;
+        }
+
+        input#btn{
+            margin-top: 20px;
+            color: rgb(255, 255, 255);
+            background:rgb(0, 0, 0);
+            width: 300px;
+            height:30px; 
+        }
+        body#bodytwou{
+            color: rgb(255, 11, 11);
+            background:rgb(45, 9, 204);
+            width: 500px;
+            height: 500px;
+            
+        }
+    </style>
+</head>
+<body>
+
+    
+<body id="bodytwou">
+    <h1>Somando numeros</h1>
+    <input type="number" name="campo1" id="tex1"> +
+    <input type="number" name="campo2" id="tex2">
+    <input type="button" value="Somar" onclick="somar()" id="btn" >
+    <div id ="most"> result...</div>
+</body>  
+
+
+
+
+    <script>
+        var bodytwou = window.document.getElementsByTagName('bodytwou')[1];
+        function somar(){
+            var tx1 = window.document.getElementById('tex1');
+            var tx2 = window.document.getElementById('tex2');
+            var mosta = document.getElementById('most');
+            var re1 = Number(tx1.value);
+            var re2 = Number(tx2.value);
+            var s = re1 + re2;
+            mosta.innerText=`resultado ${s}`
+            mosta.style.background='YELLOW'
+
+            if(s > 50){
+                window.document.write(`a soma que e ${s} e maior que 50`);
+            }else{
+                window.document.write(`a soma que e ${s} e menor que 50`)
+            }
+        }
+    </script>
+    
+</body>
+</html>
